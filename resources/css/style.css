@@ -1,6 +1,26 @@
-/* setting the root font size */
+/* setting the root font size and family*/
 html {
   font-size: 18px;
+  font-family: Helvetica;
+}
+
+/* common styles for h1 */
+h1 {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+/* common styles for h2 */
+h2 {
+  font-size: 1rem;
+  color: white;
+}
+
+/* defines background image for the header */
+header {
+  background-image: url('../images/moto.jpeg');
+  background-size: cover;
 }
 
 /* spans the whole width with black background and contains the logo with page title */
@@ -21,11 +41,40 @@ html {
   align-items: center;
 }
 
-/* */
+/* styles the logo image */
 .logo img {
   height: 1.5rem;
   width: auto;
-  padding: 0 0.5rem;
+  padding: 0 1rem 0 0.5rem;
 }
 
-/* */
+/* banner as background image, to fill whole div  */
+.banner {
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.news-container {
+  width: 960px;
+
+}
+
+/* black box within banner div containing news */
+.news {
+  background-color: black;
+  width: 20rem;
+  margin-top: 9rem;
+}
+
+/* first line in news is bold */
+.news h2 {
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+
+.news h1 {
+  padding-left: 3rem;
+  padding-top: 0.25rem;
+}
