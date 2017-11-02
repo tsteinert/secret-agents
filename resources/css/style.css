@@ -55,9 +55,8 @@ header {
   justify-content: center;
 }
 
-.news-container, .nav-container, .content-container, .info-container {
+.news-container, .nav-container, .content-container, .info-container, .footer-content {
   width: 960px;
-
 }
 
 /* black box within banner div containing news */
@@ -155,4 +154,12 @@ header {
   padding-left: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 5rem;
 }
