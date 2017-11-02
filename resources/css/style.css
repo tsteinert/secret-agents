@@ -105,17 +105,29 @@ header {
   padding-top: 3rem;
 }
 
+.container2 {
+    width: 30%;
+}
+
 .product-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 4px solid black;
-  width: 30%;
+  height: 12rem;
 }
 
 .product-img {
   max-width: 8rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.image-description {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
