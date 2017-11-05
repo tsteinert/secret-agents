@@ -166,12 +166,15 @@ footer {
 
 /* responsive design section */
 
+@media only screen and (min-width: 980px) {
+  .medium {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 980px) {
   .large {
     display: none;
-  }
-  .medium {
-    display: inherit;
   }
   .nav-container {
     justify-content: center;
