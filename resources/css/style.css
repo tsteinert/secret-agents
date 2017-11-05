@@ -163,3 +163,23 @@ footer {
   background-color: black;
   height: 5rem;
 }
+
+/* responsive design section */
+
+@media only screen and (max-width: 980px) {
+  .large {
+    display: none;
+  }
+  .medium {
+    display: inherit;
+  }
+  .nav-container {
+    justify-content: center;
+  }
+  .container2 {
+      width: 47%;
+  }
+  .news-container, .nav-container, .content-container, .info-container, .footer-content {
+    width: 100%;
+  }
+}
