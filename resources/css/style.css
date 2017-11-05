@@ -166,14 +166,16 @@ footer {
 
 /* responsive design section */
 
+/* large */
 @media only screen and (min-width: 980px) {
-  .medium {
+  .medium:not(.large) {
     display: none;
   }
 }
 
-@media only screen and (max-width: 980px) {
-  .large {
+/* medium */
+@media only screen and (max-width: 979px) {
+  .large:not(.medium) {
     display: none;
   }
   .nav-container {
@@ -184,5 +186,46 @@ footer {
   }
   .news-container, .nav-container, .content-container, .info-container, .footer-content {
     width: 100%;
+  }
+}
+
+/* small */
+@media only screen and (max-width: 470px) {
+  .large:not(.small), .medium:not(.small) {
+    display: none;
+  }
+  .container2 {
+      width: 90%;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: center;
+  }
+  .products {
+    justify-content: center;
+  }
+  .news h2 {
+    font-size: 0.77rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+  .news h1 {
+    padding-left: 2rem;
+    font-size: 1rem;
+  }
+  .news {
+    height: 5rem;
+    width: 100%;
+  }
+  .banner {
+    height: 15rem;
+  }
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info {
+    width: 90%;
+    margin-top: 0.5rem;
   }
 }
